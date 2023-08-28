@@ -1,0 +1,15 @@
+.CreateCardNote {
+  width: 140px;
+  padding: 10px;
+  background: var(--remember);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.CreateCardNote input {
+  margin-bottom: 10px;
+  background: transparent;
+}
+.CreateCardNote textarea {
+  background: transparent;
+}

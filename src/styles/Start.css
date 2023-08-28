@@ -1,0 +1,78 @@
+.Start {
+  width: 100%;
+  height: 100vh;
+  background: url('../images/background-start.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Start-rotate {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  background: #ffffffdc;
+  border-bottom: 3px solid var(--hover);
+  border-radius: 100%;
+  animation: rotateBorders 4s linear infinite;
+}
+@keyframes rotateBorders {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.Start-container {
+  width: 490px;
+  height: 490px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  z-index: 2;
+}
+.Start-container-btn {
+  width: 100%;
+  margin-top: 30px;
+  display: grid;
+  place-items: center;
+  gap: 15px;
+}
+.Start-btn {
+  width: 250px;
+  height: 50px;
+  background: var(--buttons);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--texts);
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+  border-radius: 0 16px 16px 0;
+  transition: 200ms ease-in-out;
+}
+.Start-btn:hover {
+  background: var(--hover);
+  border-radius: 16px 0 0 16px;
+}
+
+@media (max-width: 480px) {
+  .Start-rotate {
+    width: 300px;
+    height: 300px;
+  }
+  .Start-container {
+    width: 290px;
+    height: 290px;
+  }
+  .Start-btn {
+    width: 160px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+}

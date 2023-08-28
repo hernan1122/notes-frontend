@@ -1,0 +1,15 @@
+.Notes {
+  width: 100%;
+  margin-top: 275px;
+  padding: 0 20px;
+}
+.Notes h2 {
+  margin-bottom: 10px;
+}
+.Notes-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 15px;
+}

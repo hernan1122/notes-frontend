@@ -1,0 +1,41 @@
+.Head {
+  width: 90%;
+  height: 220px;
+  padding: 35px 60px 35px 60px;
+  background: var(--buttons);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0 40px 40px 0;
+}
+.Head-content-user {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+}
+.Head-content-user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 0 15px 15px 0;
+}
+.Head-content-input {
+  width: 100%;
+  position: relative;
+}
+.Head-icon {
+  position: absolute;
+  top: calc(40px - 29px);
+  left: 10px;
+  color: var(--text-secondary);
+  font-size: 18px;
+}
+.Head-content-input input {
+  width: 100%;
+  height: 40px;
+  padding-left: 35px;
+  background: var(--background);
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 0 15px 15px 0;
+}

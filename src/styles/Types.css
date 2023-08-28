@@ -1,0 +1,42 @@
+.Types {
+  width: 90%;
+  margin-top: 30px;
+  padding: 20px 20px 20px 20px;
+  position: absolute;
+  right: 0;
+  background: var(--buttons);
+  border-radius: 40px 0 0 40px;
+}
+.Types-content {
+  margin-top: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.Types-circle-clock,
+.Types-circle-remember,
+.Types-circle-birthday {
+  width: 50px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px 0 0 12px;
+}
+.Types-circle-clock {
+  background: var(--clock);
+}
+.Types-circle-remember {
+  background: var(--remember);
+}
+.Types-circle-birthday {
+  background: var(--birthday);
+}
+.Types-icon {
+  font-size: 15px;
+  color: var(--white);
+}
+.Types-description {
+  display: flex;
+  flex-direction: column;
+}

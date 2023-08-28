@@ -1,0 +1,14 @@
+.CardNote {
+  padding: 12px;
+  background: var(--remember);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.CardNote h4 {
+  margin-bottom: 3px;
+  background: transparent;
+}
+.CardNote p {
+  font-size: 1.4rem;
+}

@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --background: #f3f0dd;
+  --name-app: #8c997b;
+  --buttons: #b2ba91;
+  --hover: #758264;
+  --focus: #5c664f;
+  --text-primary: #323335;
+  --text-secondary: #2b2c2d;
+  --texts-form: #444;
+  --white: #fff;
+  --clock: #6868ff;
+  --remember: #ffc760;
+  --birthday: #ff7575;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--background);
+}
+body::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--buttons);
+  border-radius: 50px;
+}
+h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+h3 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: var(--text-primary);
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--text-primary);
+}
+span {
+  margin-bottom: 25px;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--hover);
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  span {
+    font-size: 2.2rem;
+  }
+}
