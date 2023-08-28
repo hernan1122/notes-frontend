@@ -1,9 +1,9 @@
 .CreateButton {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   position: fixed;
-  bottom: 14px;
-  right: 14px;
+  bottom: 15px;
+  right: 15px;
   background: var(--hover);
   display: grid;
   place-items: center;
@@ -11,6 +11,6 @@
   border-radius: 13px 0 0 13px;
 }
 .CreateButton-icon {
-  font-size: 22px;
+  font-size: 24px;
   color: var(--white);
 }
