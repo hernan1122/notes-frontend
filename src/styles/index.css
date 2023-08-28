@@ -13,9 +13,12 @@
   --text-secondary: #2b2c2d;
   --texts-form: #444;
   --white: #fff;
-  --clock: #6868ff;
-  --remember: #ffc760;
-  --birthday: #ff7575;
+  /* --clock: #6868ff; */
+  --clock: #8686ff;
+  /* --remember: #ffc760; */
+  --remember: #ffd78c;
+  /* --birthday: #ff7575; */
+  --birthday: #ff9292;
 }
 html {
   font-size: 62.5%;
