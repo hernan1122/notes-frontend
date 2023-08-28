@@ -1,7 +1,7 @@
 .Types {
   width: 90%;
   margin-top: 30px;
-  padding: 20px 20px 20px 20px;
+  padding: 30px;
   position: absolute;
   right: 0;
   background: var(--buttons);
@@ -39,4 +39,7 @@
 .Types-description {
   display: flex;
   flex-direction: column;
+}
+.Types-description p {
+  color: var(--texts-form);
 }
