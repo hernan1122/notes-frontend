@@ -1,0 +1,24 @@
+.CardOptions {
+  padding: 7px 10px;
+  position: absolute;
+  top: 33px;
+  right: -8px;
+  background: var(--background);
+  border: 1px solid #b9b9b9;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.CardOptions.show {
+  opacity: 1;
+}
+.CardOptions-content{
+  padding-bottom: 2px;
+  display: flex;
+  gap: 6px;
+  text-decoration: none;
+}
+.CardOptions-icon {
+  font-size: 18px;
+  color: var(--texts-form);
+}
