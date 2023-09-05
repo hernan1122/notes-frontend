@@ -1,13 +1,23 @@
 .CardNote {
   padding: 12px;
+  position: relative;
   background: var(--remember);
   display: flex;
   flex-direction: column;
   border-radius: 10px;
 }
+.CardNote-container-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .CardNote h4 {
   margin-bottom: 3px;
   background: transparent;
+}
+.CardNote-icon {
+  font-size: 15px;
+  color: var(--texts-form);
 }
 .CardNote p {
   font-size: 1.4rem;
