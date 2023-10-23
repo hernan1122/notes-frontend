@@ -4,6 +4,7 @@ import Head from '../components/Head';
 import Types from '../components/Types';
 import Notes from '../components/Notes';
 import CreateButton from '../components/CreateButton';
+import Camera from '../camera';
 import '../styles/Home.css'
 
 function Home() {
@@ -15,6 +16,7 @@ function Home() {
       </div>
       <Notes />
       <CreateButton />
+      <Camera />
 
       <Link to={'/'}>Atras</Link>
     </div>
