@@ -5,15 +5,15 @@ const Camera = () => {
   const canvasRef = useRef(null)
   const [photoUrl, setPhotoUrl] = useState(null)
   const [showImg, setShowImg] = useState(false)
-  const [typeCamera, setTypeCamera] = useState('environment')
-  console.log('1', typeCamera)
+  const [facingMode, setFacingMode] = useState('environment')
+  console.log('1', facingMode)
 
   useEffect(() => {
     const initCamera = async () => {
       try {
-        const constraints = {video: {typeCamera}}
-        //const stream = await navigator.mediaDevices.getUserMedia(constraints)
-        const stream = await navigator.mediaDevices.getUserMedia({video: {facingMode: 'environment'}})
+        const constraints = {video: {facingMode}}
+        const stream = await navigator.mediaDevices.getUserMedia(constraints)
+        //const stream = await navigator.mediaDevices.getUserMedia({video: {facingMode: 'environment'}})
         if (videoRef.current) {
           videoRef.current.srcObject = stream
         }
@@ -26,8 +26,8 @@ const Camera = () => {
   }, [])
 
   const switchCamera = () => {
-    setTypeCamera(typeCamera === 'user' ? 'environment' : 'user')
-    console.log('cambio de camara,', typeCamera)
+    setFacingMode(facingMode === 'user' ? 'environment' : 'user')
+    console.log('cambio de camara,', facingMode)
   }
 
   const takePhoto = () => {
@@ -83,14 +83,13 @@ const Camera = () => {
             Eliminar foto
           </button>
 
-          {/* <button
+          <button
           className=' h-12 px-6 text-white font-bold tracking-tighter rounded-lg bg-black hover:bg-yellow-400 hover:text-black transition-all duration-300'
           onClick={switchCamera}
           type='button'
         >
-            
-            Cambiar camara
-        </button> */}
+          Cambiar camara
+        </button>
 
         </div>
       </div>
