@@ -12,7 +12,8 @@ const Camera = () => {
     const initCamera = async () => {
       try {
         const constraints = {video: {typeCamera}}
-        const stream = await navigator.mediaDevices.getUserMedia(constraints)
+        //const stream = await navigator.mediaDevices.getUserMedia(constraints)
+        const stream = await navigator.mediaDevices.getUserMedia({video: {facingMode: 'environment'}})
         if (videoRef.current) {
           videoRef.current.srcObject = stream
         }
@@ -82,14 +83,14 @@ const Camera = () => {
             Eliminar foto
           </button>
 
-          <button
+          {/* <button
           className=' h-12 px-6 text-white font-bold tracking-tighter rounded-lg bg-black hover:bg-yellow-400 hover:text-black transition-all duration-300'
           onClick={switchCamera}
           type='button'
         >
-            {/* <ArrowPathIcon className='w-7 text-white hover:bg-yellow-400 hover:text-black transition-all duration-300' /> */}
+            
             Cambiar camara
-        </button>
+        </button> */}
 
         </div>
       </div>
