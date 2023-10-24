@@ -12,8 +12,8 @@ const Camera = () => {
     const initCamera = async () => {
       try {
         const constraints = {video: {facingMode}}
-        //const stream = await navigator.mediaDevices.getUserMedia(constraints)
-        const stream = await navigator.mediaDevices.getUserMedia({video: {facingMode: facingMode}})
+        const stream = await navigator.mediaDevices.getUserMedia(constraints)
+        //const stream = await navigator.mediaDevices.getUserMedia({video: {facingMode: 'environment'}})
         if (videoRef.current) {
           videoRef.current.srcObject = stream
         }
@@ -23,7 +23,7 @@ const Camera = () => {
     }
 
     initCamera()
-  }, [])
+  }, [facingMode])
 
   const switchCamera = () => {
     setFacingMode(facingMode === 'user' ? 'environment' : 'user')
