@@ -1,19 +1,19 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const Camera = () => {
+const Camera = ({facingMode, setFacingMode}) => {
   const videoRef = useRef(null)
   const canvasRef = useRef(null)
   const [photoUrl, setPhotoUrl] = useState(null)
   const [showImg, setShowImg] = useState(false)
-  const [facingMode, setFacingMode] = useState('environment')
+  
   console.log('1', facingMode)
 
   useEffect(() => {
     const initCamera = async () => {
       try {
         const constraints = {video: {facingMode}}
-        const stream = await navigator.mediaDevices.getUserMedia(constraints)
-        //const stream = await navigator.mediaDevices.getUserMedia({video: {facingMode: 'environment'}})
+        //const stream = await navigator.mediaDevices.getUserMedia(constraints)
+        const stream = await navigator.mediaDevices.getUserMedia({video: {facingMode}})
         if (videoRef.current) {
           videoRef.current.srcObject = stream
         }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Head from '../components/Head';
 import Types from '../components/Types';
@@ -8,6 +8,8 @@ import Camera from '../camera';
 import '../styles/Home.css'
 
 function Home() {
+  const [facingMode, setFacingMode] = useState('environment')
+
   return (
     <div className='Home'>
       <div className='Home-content'>
@@ -16,7 +18,7 @@ function Home() {
       </div>
       <Notes />
       <CreateButton />
-      <Camera />
+      <Camera facingMode={facingMode} setFacingMode={setFacingMode} />
 
       <Link to={'/'}>Atras</Link>
     </div>
